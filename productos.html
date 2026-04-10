@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Ferretería XK</title>
+    <link rel="stylesheet" href="css/estiloproducto.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Mejora visual para tarjetas sin imagen */
+        .producto-img {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #eee;
+        }
+        .producto-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .producto-card:hover .producto-img img {
+            transform: scale(1.05);
+        }
+        /* Placeholder visual para productos sin imagen */
+        .img-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            color: #aaa;
+            gap: 10px;
+        }
+        .img-placeholder i {
+            font-size: 3rem;
+            color: #c0392b;
+            opacity: 0.5;
+        }
+        .img-placeholder span {
+            font-size: 0.75rem;
+            font-family: 'Montserrat', sans-serif;
+            color: #bbb;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="top-bar">
+            <i class="fas fa-truck"></i> Envío gratis en compras mayores a $50 &nbsp;|&nbsp;
+            <i class="fas fa-phone"></i> Ventas: 3556-7783
+        </div>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Ferretería XK" style="height: 50px;">
+                <span>FERRETERÍA XK</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="compras.html">Compras</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="productos.html" class="activo">Productos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="compras.html" style="text-decoration:none; color:inherit;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Nuestros Productos</h1>
+            <p>FERRETERÍA - XK</p>
+        </div>
+    </section>
+
+    <!-- ===== BARRA DE BÚSQUEDA ===== -->
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" class="search-input" id="busqueda" placeholder="Buscar producto...">
+            <button class="search-btn"><i class="fas fa-search"></i> Buscar</button>
+        </div>
+    </section>
+
+    <!-- ===== SIDEBAR + CONTENIDO ===== -->
+    <div class="productos-layout">
+
+        <aside class="sidebar">
+            <h3><i class="fas fa-list"></i> Categorías</h3>
+            <ul class="categorias-lista">
+                <li><a href="#herramientas-electricas" class="cat-link activo-cat"><i class="fas fa-bolt"></i> Herramientas Eléctricas</a></li>
+                <li><a href="#herramientas-manuales"  class="cat-link"><i class="fas fa-wrench"></i> Herramientas Manuales</a></li>
+                <li><a href="#materiales"             class="cat-link"><i class="fas fa-hard-hat"></i> Materiales de Construcción</a></li>
+                <li><a href="#pinturas"               class="cat-link"><i class="fas fa-paint-roller"></i> Pinturas y Acabados</a></li>
+                <li><a href="#plomeria"               class="cat-link"><i class="fas fa-faucet"></i> Plomería</a></li>
+                <li><a href="#electricidad"           class="cat-link"><i class="fas fa-plug"></i> Electricidad</a></li>
+                <li><a href="#seguridad"              class="cat-link"><i class="fas fa-shield-alt"></i> Seguridad Industrial</a></li>
+                <li><a href="#jardineria"             class="cat-link"><i class="fas fa-leaf"></i> Jardinería</a></li>
+                <li><a href="#maquinaria"             class="cat-link"><i class="fas fa-cog"></i> Maquinaria Pesada</a></li>
+            </ul>
+        </aside>
+
+        <main class="productos-main">
+
+            <!-- ── 1. HERRAMIENTAS ELÉCTRICAS ── -->
+            <section class="categoria-seccion" id="herramientas-electricas">
+                <div class="categoria-header">
+                    <i class="fas fa-bolt"></i>
+                    <h2>Herramientas Eléctricas</h2>
+                </div>
+                <div class="productos-grid">
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/taladropercutor700w.jpeg" alt="Taladro Percutor 700W"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Eléctricas</span>
+                            <h4>Taladro Percutor 700W</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$45.99</span><span class="precio-anterior">$55.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/amoladoraangular412.jpg" alt="Amoladora Angular 4½"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Eléctricas</span>
+                            <h4>Amoladora Angular 4½"</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$38.50</span><span class="precio-anterior">$48.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/sierracincular71400w.png" alt="Sierra Circular"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Eléctricas</span>
+                            <h4>Sierra Circular 7¼" 1400W</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$79.99</span><span class="precio-anterior">$95.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/lijadoraorbital180w.jpg" alt="Lijadora Orbital"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Eléctricas</span>
+                            <h4>Lijadora Orbital 180W</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$29.99</span><span class="precio-anterior">$38.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/rotomartillosds800w.jpg" alt="Rotomartillo SDS"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Eléctricas</span>
+                            <h4>Rotomartillo SDS 800W</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$89.99</span><span class="precio-anterior">$110.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/atornilladorinalambrico12v.jpg" alt="Atornillador Inalámbrico"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Eléctricas</span>
+                            <h4>Atornillador Inalámbrico 12V</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$34.99</span><span class="precio-anterior">$42.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/pulidoradepiso1500w.png" alt="Pulidora de Piso"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Eléctricas</span>
+                            <h4>Pulidora de Piso 1500W</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$120.00</span><span class="precio-anterior">$145.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/caladora500WDewalt.webp" alt="Caladora 500W"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Eléctricas</span>
+                            <h4>Caladora 500W</h4>
+                            <div class="producto-estrellas">★★★☆☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$32.00</span><span class="precio-anterior">$40.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/soldadorainversora160a.jpeg" alt="Soldadora Inversora"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Eléctricas</span>
+                            <h4>Soldadora Inversora 160A</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$135.00</span><span class="precio-anterior">$160.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/compresordeaire24l.jpg" alt="Compresor de Aire"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Eléctricas</span>
+                            <h4>Compresor de Aire 24L</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$98.00</span><span class="precio-anterior">$120.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── 2. HERRAMIENTAS MANUALES ── -->
+            <section class="categoria-seccion" id="herramientas-manuales">
+                <div class="categoria-header">
+                    <i class="fas fa-wrench"></i>
+                    <h2>Herramientas Manuales</h2>
+                </div>
+                <div class="productos-grid">
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/juegodellaves12.jpg" alt="Juego de Llaves"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Manuales</span>
+                            <h4>Juego de Llaves Combinadas x12</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$18.99</span><span class="precio-anterior">$25.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/martillodecarpintero20oz.jpg" alt="Martillo de Carpintero"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Manuales</span>
+                            <h4>Martillo de Carpintero 20oz</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$9.50</span><span class="precio-anterior">$13.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/destornilladoresset8.jpg" alt="Destornilladores Set"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Manuales</span>
+                            <h4>Destornilladores Set x8</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$12.00</span><span class="precio-anterior">$16.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/images.png" alt="Alicate Multiusos"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Manuales</span>
+                            <h4>Alicate Multiusos 8"</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$7.99</span><span class="precio-anterior">$11.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/cintametrica5m.jpg" alt="Cinta Métrica"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Manuales</span>
+                            <h4>Cinta Métrica 5m</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$5.50</span><span class="precio-anterior">$8.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/niveldeburbuja.jpg" alt="Nivel de Burbuja"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Manuales</span>
+                            <h4>Nivel de Burbuja 60cm</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$8.99</span><span class="precio-anterior">$12.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/llevainglesaajustable.jpg" alt="Llave Inglesa"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Manuales</span>
+                            <h4>Llave Inglesa Ajustable 12"</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$11.00</span><span class="precio-anterior">$15.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/serrucho20.jpg" alt="Serrucho"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Manuales</span>
+                            <h4>Serrucho 20" Bimetal</h4>
+                            <div class="producto-estrellas">★★★☆☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$6.50</span><span class="precio-anterior">$9.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/cincelparaconcreto.jpg" alt="Cincel para Concreto"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Manuales</span>
+                            <h4>Cincel para Concreto 1"</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$4.25</span><span class="precio-anterior">$6.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/cajadeherramientas.jpg" alt="Caja de Herramientas"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Herramientas Manuales</span>
+                            <h4>Caja de Herramientas 16"</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$14.99</span><span class="precio-anterior">$20.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── 3. MATERIALES DE CONSTRUCCIÓN ── -->
+            <section class="categoria-seccion" id="materiales">
+                <div class="categoria-header">
+                    <i class="fas fa-hard-hat"></i>
+                    <h2>Materiales de Construcción</h2>
+                </div>
+                <div class="productos-grid">
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/cementoportland.jpg" alt="Cemento Pórtland"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Materiales</span>
+                            <h4>Cemento Pórtland 42.5kg</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$8.50</span><span class="precio-anterior">$10.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/bloquedeconcreto.jpg" alt="Bloque de Concreto"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Materiales</span>
+                            <h4>Bloque de Concreto 15x20x40</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$0.75</span><span class="precio-anterior">$0.95</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/arenaderio.jpeg" alt="Arena de Río"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Materiales</span>
+                            <h4>Arena de Río m³</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$22.00</span><span class="precio-anterior">$28.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/varillacorrugada.jpg" alt="Varilla Corrugada"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Materiales</span>
+                            <h4>Varilla Corrugada ⅜" x 6m</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$3.80</span><span class="precio-anterior">$5.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/laminazinc.jpg" alt="Lámina Zinc"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Materiales</span>
+                            <h4>Lámina Zinc Cal. 26 x 10'</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$12.50</span><span class="precio-anterior">$15.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/pegamentoparaceramica.jpg" alt="Pegamento Cerámica"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Materiales</span>
+                            <h4>Pegamento para Cerámica 25kg</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$7.99</span><span class="precio-anterior">$10.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/tubohg1.jpeg" alt="Tubo HG"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Materiales</span>
+                            <h4>Tubo HG 1" x 6m</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$9.50</span><span class="precio-anterior">$12.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/mallaelectrosoldada.jpeg" alt="Malla Electrosoldada"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Materiales</span>
+                            <h4>Malla Electrosoldada 6x6</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$18.00</span><span class="precio-anterior">$22.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/tablasdemadera.jpg" alt="Tablas de Madera"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Materiales</span>
+                            <h4>Tablas de Madera Pino 1x6"x8'</h4>
+                            <div class="producto-estrellas">★★★☆☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$4.50</span><span class="precio-anterior">$6.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/impermeabilizante.jpg" alt="Impermeabilizante"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Materiales</span>
+                            <h4>Impermeabilizante Acrílico 19L</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$35.00</span><span class="precio-anterior">$42.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── 4. PINTURAS Y ACABADOS ── -->
+            <section class="categoria-seccion" id="pinturas">
+                <div class="categoria-header">
+                    <i class="fas fa-paint-roller"></i>
+                    <h2>Pinturas y Acabados</h2>
+                </div>
+                <div class="productos-grid">
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/pinturalatexblanca.jpg" alt="Pintura Látex"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h4>Pintura Látex Blanca 19L</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$28.00</span><span class="precio-anterior">$35.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/pinturaanticorrosiva.jpg" alt="Pintura Anticorrosiva"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h4>Pintura Anticorrosiva 1GL</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$15.99</span><span class="precio-anterior">$20.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/esmalteaquidicocolores.jpg" alt="Esmalte Alquídico"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h4>Esmalte Alquídico Colores 1GL</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$18.50</span><span class="precio-anterior">$23.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/rodillodepintura.jpeg" alt="Rodillo de Pintura"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h4>Rodillo de Pintura 9" c/Mango</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$4.50</span><span class="precio-anterior">$6.50</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/thinnerestandar.jpg" alt="Thinner Estándar"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h4>Thinner Estándar 1GL</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$6.99</span><span class="precio-anterior">$9.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/selladoraclilico.webp" alt="Sellador Acrílico"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h4>Sellador Acrílico Interior 1GL</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$12.00</span><span class="precio-anterior">$16.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/pinturaparapiso.jpg" alt="Pintura para Piso"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h4>Pintura para Piso 1GL</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$16.50</span><span class="precio-anterior">$21.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/brochaangular.jpg" alt="Brocha Angular"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h4>Brocha Angular 2½"</h4>
+                            <div class="producto-estrellas">★★★☆☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$2.99</span><span class="precio-anterior">$4.50</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/masillaplastica.jpeg" alt="Masilla Plástica"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h4>Masilla Plástica 4kg</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$8.00</span><span class="precio-anterior">$11.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/pinturaexposiva.jpeg" alt="Pintura Epóxica"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Pinturas</span>
+                            <h4>Pintura Epóxica Industrial 1GL</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$32.00</span><span class="precio-anterior">$40.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── 5. PLOMERÍA ── -->
+            <section class="categoria-seccion" id="plomeria">
+                <div class="categoria-header">
+                    <i class="fas fa-faucet"></i>
+                    <h2>Plomería</h2>
+                </div>
+                <div class="productos-grid">
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/tubopvc.webp" alt="Tubo PVC"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Plomería</span>
+                            <h4>Tubo PVC ½" x 6m</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$2.50</span><span class="precio-anterior">$3.50</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/llavedepaso.jpg" alt="Llave de Paso"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Plomería</span>
+                            <h4>Llave de Paso ½" Cromada</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$5.99</span><span class="precio-anterior">$8.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/codopvc.jpg" alt="Codo PVC"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Plomería</span>
+                            <h4>Codo PVC 90° ½" (bolsa x10)</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$1.20</span><span class="precio-anterior">$1.80</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/inodoroblanco.jpg" alt="Inodoro Blanco"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Plomería</span>
+                            <h4>Inodoro Económico Blanco</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$55.00</span><span class="precio-anterior">$70.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/duchaelectrica.jpg" alt="Ducha Eléctrica"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Plomería</span>
+                            <h4>Ducha Eléctrica 110V</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$22.00</span><span class="precio-anterior">$28.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/lavamanosblanco.jpg" alt="Lavamanos Pedestal"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Plomería</span>
+                            <h4>Lavamanos Pedestal Blanco</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$38.00</span><span class="precio-anterior">$48.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/pegamentopvc.jpg" alt="Pegamento PVC"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Plomería</span>
+                            <h4>Pegamento PVC 250ml</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$3.50</span><span class="precio-anterior">$5.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/grifodecosina.jpg" alt="Grifo de Cocina"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Plomería</span>
+                            <h4>Grifo Monomando de Cocina</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$18.99</span><span class="precio-anterior">$25.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/tanque.jpg" alt="Tanque de Agua"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Plomería</span>
+                            <h4>Tanque de Agua 500L</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$65.00</span><span class="precio-anterior">$80.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><img src="img/bombadeagua.jpg" alt="Bomba de Agua"></div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Plomería</span>
+                            <h4>Bomba de Agua 1HP</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$72.00</span><span class="precio-anterior">$90.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── 6. ELECTRICIDAD ── (imágenes pendientes - espacio listo) -->
+            <section class="categoria-seccion" id="electricidad">
+                <div class="categoria-header">
+                    <i class="fas fa-plug"></i>
+                    <h2>Electricidad</h2>
+                </div>
+                <div class="productos-grid">
+                    <div class="producto-card fade-in">
+                        <div class="producto-img">
+                            <div class="img-placeholder" ><img src="img/cablerollo.jpg" alt="cable"></div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Electricidad</span>
+                            <h4>Cable THW #12 Rollo 100m</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$22.00</span><span class="precio-anterior">$28.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img">
+                            <div class="img-placeholder"><img src="img/focoled.jpg" alt="Foco LED"></div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Electricidad</span>
+                            <h4>Foco LED 9W (pack x4)</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$6.99</span><span class="precio-anterior">$10.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img">
+                            <div class="img-placeholder"><img src="img/timacorriente.jpg" alt="Toma Corriente"></div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Electricidad</span>
+                            <h4>Tomacorriente Doble 15A</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$2.50</span><span class="precio-anterior">$3.50</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img">
+                            <div class="img-placeholder"><img src="img/polo.jpg" alt="Polo"></div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Electricidad</span>
+                            <h4>Breaker 20A 1 Polo</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$5.50</span><span class="precio-anterior">$7.50</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img">
+                            <div class="img-placeholder"><img src="img/cinta3m.jpg" alt="Cinta Aislante"></div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Electricidad</span>
+                            <h4>Cinta Aislante 3M (pack x5)</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$3.99</span><span class="precio-anterior">$5.50</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img">
+                            <div class="img-placeholder"><img src="img/panelsolar.jpg" alt="Panel Solar"></div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Electricidad</span>
+                            <h4>Panel Solar 100W Monocristalino</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$85.00</span><span class="precio-anterior">$105.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img">
+                            <div class="img-placeholder"><img src="img/interruptor.jpg" alt="Interruptor Simple"></div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Electricidad</span>
+                            <h4>Interruptor Simple Blanco</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$1.80</span><span class="precio-anterior">$2.80</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img">
+                            <div class="img-placeholder"><img src="img/cajadedistribucion.jpg" alt="Caja de Distribución"></div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Electricidad</span>
+                            <h4>Caja de Distribución 6 Circuitos</h4>
+                            <div class="producto-estrellas">★★★★★</div>
+                            <div class="producto-precio"><span class="precio-actual">$14.99</span><span class="precio-anterior">$20.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img">
+                            <div class="img-placeholder"><img src="img/reflectorled.jpg" alt="Reflector LED"></div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Electricidad</span>
+                            <h4>Reflector LED 50W Exterior</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$12.50</span><span class="precio-anterior">$18.00</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img">
+                            <div class="img-placeholder"><img src="img/conduit.jpg" alt="Conduit PVC"></div>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Electricidad</span>
+                            <h4>Conduit PVC ¾" x 3m</h4>
+                            <div class="producto-estrellas">★★★★☆</div>
+                            <div class="producto-precio"><span class="precio-actual">$1.50</span><span class="precio-anterior">$2.20</span></div>
+                            <button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── 7. SEGURIDAD INDUSTRIAL ── (imágenes pendientes) -->
+            <section class="categoria-seccion" id="seguridad">
+                <div class="categoria-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h2>Seguridad Industrial</h2>
+                </div>
+                <div class="productos-grid">
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/casconblanco.jpg" alt="Casco de Seguridad"></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Seguridad</span><h4>Casco de Seguridad Blanco</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$6.99</span><span class="precio-anterior">$9.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/lentesdeseguridad.jpg" alt="Lentes de Seguridad"></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Seguridad</span><h4>Lentes de Seguridad Transparentes</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$2.50</span><span class="precio-anterior">$4.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/guantesdecuero.jpg" alt="Guantes de Cuero"></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Seguridad</span><h4>Guantes de Cuero Reforzado</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$4.99</span><span class="precio-anterior">$7.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/botas.jpg" alt="Bostas de Seguridad"></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Seguridad</span><h4>Botas Punta de Acero T42</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$28.00</span><span class="precio-anterior">$36.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/mascarilla.jpg" alt="Mascarilla"></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Seguridad</span><h4>Mascarilla Respirador N95 x10</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$8.50</span><span class="precio-anterior">$12.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/chaleco.jpeg" alt="Chaleco"></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Seguridad</span><h4>Chaleco Reflectivo Naranja</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$5.50</span><span class="precio-anterior">$7.50</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/arnes.jpg" alt="Arnés de Seguridad"></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Seguridad</span><h4>Arnés de Seguridad 2 Argollas</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$22.00</span><span class="precio-anterior">$30.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/extintor.png" alt="Extintor"></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Seguridad</span><h4>Extintor PQS 10 libras</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$18.00</span><span class="precio-anterior">$24.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/taponesaudi.jpg" alt="Tapones Auditivos"></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Seguridad</span><h4>Tapones Auditivos x50 pares</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$4.00</span><span class="precio-anterior">$6.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/cono.jpeg" alt="Cono de Señalizacion"></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Seguridad</span><h4>Cono de Señalización 70cm</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$3.50</span><span class="precio-anterior">$5.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── 8. JARDINERÍA ── (imágenes pendientes) -->
+            <section class="categoria-seccion" id="jardineria">
+                <div class="categoria-header">
+                    <i class="fas fa-leaf"></i>
+                    <h2>Jardinería</h2>
+                </div>
+                <div class="productos-grid">
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/mageradejardin.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Jardinería</span><h4>Manguera de Jardín 15m</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$8.99</span><span class="precio-anterior">$12.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/tigera.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Jardinería</span><h4>Tijera de Podar 8"</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$6.50</span><span class="precio-anterior">$9.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/paladejardin.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Jardinería</span><h4>Pala de Jardín con Mango</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$7.99</span><span class="precio-anterior">$11.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/fertilizante.png" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Jardinería</span><h4>Fertilizante NPK 20kg</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$12.00</span><span class="precio-anterior">$16.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/rastrillo.jpeg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Jardinería</span><h4>Rastrillo de Jardín 14 dientes</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$5.50</span><span class="precio-anterior">$8.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/fumigador.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Jardinería</span><h4>Fumigadora de Mochila 16L</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$18.99</span><span class="precio-anterior">$25.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/maceta.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Jardinería</span><h4>Maceta Plástica 35cm (pack x3)</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$4.99</span><span class="precio-anterior">$7.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/tierraabonada.png" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Jardinería</span><h4>Tierra Abonada 20kg</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$6.00</span><span class="precio-anterior">$8.50</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/cortadores.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Jardinería</span><h4>Cortabordes Eléctrico 400W</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$32.00</span><span class="precio-anterior">$42.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/expensorderiego.jpeg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Jardinería</span><h4>Aspersor de Riego Giratorio</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$3.99</span><span class="precio-anterior">$6.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── 9. MAQUINARIA PESADA ── (imágenes pendientes) -->
+            <section class="categoria-seccion" id="maquinaria">
+                <div class="categoria-header">
+                    <i class="fas fa-cog"></i>
+                    <h2>Maquinaria Pesada</h2>
+                </div>
+                <div class="productos-grid">
+
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/mescladora.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Maquinaria</span><h4>Mezcladora de Concreto 1 Saco</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$320.00</span><span class="precio-anterior">$400.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/vibradordeconcreto.png" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Maquinaria</span><h4>Vibrador de Concreto 1½" 1HP</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$185.00</span><span class="precio-anterior">$220.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/compactador.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Maquinaria</span><h4>Compactadora de Suelo 5HP</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$450.00</span><span class="precio-anterior">$560.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/cortadoradeconcreto.jpeg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Maquinaria</span><h4>Cortadora de Concreto 14" 5HP</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$280.00</span><span class="precio-anterior">$350.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/generador.jpeg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Maquinaria</span><h4>Generador Eléctrico 3500W</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$395.00</span><span class="precio-anterior">$480.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/dobladordebarillas.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Maquinaria</span><h4>Dobladora de Varilla Manual</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$95.00</span><span class="precio-anterior">$120.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/andadomio.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Maquinaria</span><h4>Andamio Metálico 1.5x1.0m</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$55.00</span><span class="precio-anterior">$70.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/elevador.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Maquinaria</span><h4>Elevador de Materiales 200kg</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$520.00</span><span class="precio-anterior">$650.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/hidrolavadora.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Maquinaria</span><h4>Hidrolavadora 1500 PSI</h4><div class="producto-estrellas">★★★★★</div><div class="producto-precio"><span class="precio-actual">$148.00</span><span class="precio-anterior">$185.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+                    <div class="producto-card fade-in">
+                        <div class="producto-img"><div class="img-placeholder"><img src="img/carretilla.jpg" alt=""></div></div>
+                        <div class="producto-info"><span class="producto-categoria">Maquinaria</span><h4>Carretilla Metálica 80L</h4><div class="producto-estrellas">★★★★☆</div><div class="producto-precio"><span class="precio-actual">$28.00</span><span class="precio-anterior">$36.00</span></div><button class="btn-carrito"><i class="fas fa-shopping-cart"></i> Agregar</button></div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo-footer">
+                    <img src="img/logo.png" alt="Ferretería XK" class="logo-footer-img">
+                    <h3>FERRETERÍA XK</h3>
+                </div>
+                <p>Tu aliado confiable en construcción. Construye tus sueños con nosotros desde 1995.</p>
+                <p>Comprometidos con la calidad y el servicio que mereces.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="compras.html"><i class="fas fa-chevron-right"></i> Compras</a></li>
+                    <li><a href="historia.html"><i class="fas fa-chevron-right"></i> Historia</a></li>
+                    <li><a href="productos.html"><i class="fas fa-chevron-right"></i> Productos</a></li>
+                    <li><a href="galeria.html"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                    <li><a href="ubicacion.html"><i class="fas fa-chevron-right"></i> Ubicación</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Usulután, Jucuapa — Av. Francisco Gavidia</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+50335567783">3556-7783</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ventas@ferreteriaxk.com">ventas@ferreteriaxk.com</a></p>
+                <p><i class="fas fa-clock"></i> Lun - Sáb: 8:00 - 20:00</p>
+                <p><i class="fas fa-clock"></i> Dom: 9:00 - 14:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <p>Conéctate con nosotros en redes sociales</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/50335567783" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="whatsapp-directo">
+                    <a href="https://wa.me/50335567783" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 3° Desarrollado de Software - Xiomara Joselin - Katy Herrera</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').style.boxShadow =
+                window.scrollY > 100 ? '0 4px 20px rgba(0,0,0,0.25)' : '0 4px 20px rgba(0,0,0,0.15)';
+        });
+
+        const secciones = document.querySelectorAll('.categoria-seccion');
+        const catLinks  = document.querySelectorAll('.cat-link');
+        window.addEventListener('scroll', () => {
+            let actual = '';
+            secciones.forEach(sec => { if (window.scrollY >= sec.offsetTop - 180) actual = sec.id; });
+            catLinks.forEach(link => {
+                link.classList.toggle('activo-cat', link.getAttribute('href') === '#' + actual);
+            });
+        });
+
+        const inputBusqueda = document.getElementById('busqueda');
+        inputBusqueda.addEventListener('input', () => {
+            const texto = inputBusqueda.value.toLowerCase();
+            document.querySelectorAll('.producto-card').forEach(card => {
+                const nombre = card.querySelector('h4').textContent.toLowerCase();
+                card.style.display = nombre.includes(texto) ? 'block' : 'none';
+            });
+        });
+        document.querySelector('.search-btn').addEventListener('click', () => {
+            inputBusqueda.dispatchEvent(new Event('input'));
+        });
+
+        /* ── CARRITO CON localStorage ── */
+        function obtenerCarrito() {
+            return JSON.parse(localStorage.getItem('carritoXK') || '[]');
+        }
+        function guardarCarrito(carrito) {
+            localStorage.setItem('carritoXK', JSON.stringify(carrito));
+        }
+        function actualizarBadge() {
+            const total = obtenerCarrito().reduce((s, i) => s + i.cantidad, 0);
+            document.querySelector('.cart-count').textContent = total;
+        }
+
+        function agregarAlCarrito(btn) {
+            const card = btn.closest('.producto-card');
+            const nombre = card.querySelector('h4').textContent.trim();
+            const precioTxt = card.querySelector('.precio-actual').textContent.replace('$','').replace(',','');
+            const precio = parseFloat(precioTxt);
+            const img = card.querySelector('.producto-img img');
+            const imgSrc = img ? img.src : '';
+
+            const carrito = obtenerCarrito();
+            const idx = carrito.findIndex(i => i.nombre === nombre);
+            if (idx > -1) {
+                carrito[idx].cantidad++;
+            } else {
+                carrito.push({ nombre, precio, imgSrc, cantidad: 1 });
+            }
+            guardarCarrito(carrito);
+            actualizarBadge();
+
+            const orig = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check"></i> Agregado';
+            btn.style.background = '#28a745';
+            setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; }, 1800);
+        }
+
+        // Inicializar badge y listeners
+        actualizarBadge();
+        document.querySelectorAll('.btn-carrito').forEach(btn => {
+            btn.addEventListener('click', function() { agregarAlCarrito(this); });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+            });
+        });
+    </script>
+</body>
+</html>

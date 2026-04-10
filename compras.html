@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras - Ferretería XK</title>
+    <link rel="stylesheet" href="css/estilocompras.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="top-bar">
+            <i class="fas fa-truck"></i> Envío gratis en compras mayores a $50 &nbsp;|&nbsp;
+            <i class="fas fa-phone"></i> Ventas: 3556-7783
+        </div>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Ferretería XK" style="height: 50px;">
+                <span>FERRETERÍA XK</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="compras.html" class="activo">Compras</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="compras.html" style="text-decoration:none; color:inherit;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-badge">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mi Carrito de Compras</h1>
+            <p>FERRETERÍA - XK</p>
+        </div>
+    </section>
+
+    <!-- CONTENIDO -->
+    <div class="compras-layout">
+
+        <!-- LISTA DE PRODUCTOS -->
+        <div class="carrito-section">
+            <h2><i class="fas fa-shopping-cart"></i> Productos en tu carrito</h2>
+
+            <div id="carrito-contenido">
+                <!-- Estado vacío -->
+                <div class="carrito-vacio" id="carrito-vacio">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Tu carrito está vacío</p>
+                    <p style="font-size:0.9rem; margin-bottom:24px;">Agrega productos desde nuestro catálogo</p>
+                    <a href="productos.html" class="btn-seguir">
+                        <i class="fas fa-arrow-left"></i> Ver Productos
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-envio">
+                <i class="fas fa-truck"></i> <strong>¡Envío gratis!</strong> en compras mayores a $50.00
+            </div>
+        </div>
+
+        <!-- RESUMEN -->
+        <div class="resumen-section">
+            <div class="resumen-card">
+                <h3><i class="fas fa-receipt"></i> Resumen del Pedido</h3>
+                <div class="resumen-fila"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+                <div class="resumen-fila"><span>Envío</span><span id="envio">A calcular</span></div>
+                <div class="resumen-fila total"><span>Total</span><span id="total">$0.00</span></div>
+
+                <button class="btn-pagar" onclick="procesarPedido()">
+                    <i class="fas fa-lock"></i> Procesar Pedido
+                </button>
+                <a href="https://wa.me/50335567783" target="_blank" class="btn-whatsapp-compra">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+
+            <div class="metodos-card">
+                <h4><i class="fas fa-credit-card"></i> Métodos de pago</h4>
+                <div class="metodo-item"><i class="fas fa-money-bill-wave"></i> Efectivo en tienda</div>
+                <div class="metodo-item"><i class="fas fa-credit-card"></i> Tarjeta de débito / crédito</div>
+                <div class="metodo-item"><i class="fab fa-whatsapp"></i> Pago coordinado por WhatsApp</div>
+                <div class="metodo-item"><i class="fas fa-university"></i> Transferencia bancaria</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo-footer">
+                    <img src="img/logo.png" alt="Ferretería XK" class="logo-footer-img">
+                    <h3>FERRETERÍA XK</h3>
+                </div>
+                <p>Tu aliado confiable en construcción. Construye tus sueños con nosotros desde 1995.</p>
+                <p>Comprometidos con la calidad y el servicio que mereces.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="compras.html"><i class="fas fa-chevron-right"></i> Compras</a></li>
+                    <li><a href="historia.html"><i class="fas fa-chevron-right"></i> Historia</a></li>
+                    <li><a href="productos.html"><i class="fas fa-chevron-right"></i> Productos</a></li>
+                    <li><a href="galeria.html"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                    <li><a href="ubicacion.html"><i class="fas fa-chevron-right"></i> Ubicación</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Usulután, Jucuapa — Av. Francisco Gavidia</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+50335567783">3556-7783</a></p>
+                <p><i class="fas fa-envelope"></i> ventas@ferreteriaxk.com</p>
+                <p><i class="fas fa-clock"></i> Lun - Sáb: 8:00 - 20:00</p>
+                <p><i class="fas fa-clock"></i> Dom: 9:00 - 14:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <p>Conéctate con nosotros en redes sociales</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/50335567783" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="whatsapp-directo">
+                    <a href="https://wa.me/50335567783" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 3° Desarrollado de Software - Xiomara Joselin - Katy Herrera</p>
+        </div>
+    </footer>
+
+    <script>
+        /* ══════════════════════════════════════
+           CARRITO - LEE Y GESTIONA localStorage
+        ══════════════════════════════════════ */
+
+        function obtenerCarrito() {
+            return JSON.parse(localStorage.getItem('carritoXK') || '[]');
+        }
+        function guardarCarrito(carrito) {
+            localStorage.setItem('carritoXK', JSON.stringify(carrito));
+        }
+
+        /* ── Renderiza todos los ítems ── */
+        function renderCarrito() {
+            const carrito = obtenerCarrito();
+            const contenedor = document.getElementById('carrito-contenido');
+            const vacioDiv   = document.getElementById('carrito-vacio');
+            const badge      = document.getElementById('cart-badge');
+
+            // Badge del nav
+            const totalUnidades = carrito.reduce((s, i) => s + i.cantidad, 0);
+            if (badge) badge.textContent = totalUnidades;
+
+            if (carrito.length === 0) {
+                vacioDiv.style.display = 'block';
+                actualizarResumen(0);
+                return;
+            }
+
+            vacioDiv.style.display = 'none';
+
+            // Limpiar ítems previos (excepto el vacío y el aviso de envío)
+            contenedor.querySelectorAll('.carrito-item').forEach(el => el.remove());
+
+            let subtotal = 0;
+
+            carrito.forEach((item, idx) => {
+                subtotal += item.precio * item.cantidad;
+
+                const div = document.createElement('div');
+                div.className = 'carrito-item';
+                div.innerHTML = `
+                    <div class="carrito-item-img">
+                        ${item.imgSrc
+                            ? `<img src="${item.imgSrc}" alt="${item.nombre}" onerror="this.parentElement.innerHTML='<i class=\\'fas fa-box\\'></i>'">`
+                            : '<i class="fas fa-box"></i>'}
+                    </div>
+                    <div class="carrito-item-info">
+                        <h4>${item.nombre}</h4>
+                        <p class="cat">$${item.precio.toFixed(2)} c/u</p>
+                        <div class="qty-controls">
+                            <button class="qty-btn" onclick="cambiarCantidad(${idx}, -1)">−</button>
+                            <span class="qty-num">${item.cantidad}</span>
+                            <button class="qty-btn" onclick="cambiarCantidad(${idx}, 1)">+</button>
+                        </div>
+                    </div>
+                    <span class="carrito-item-precio">$${(item.precio * item.cantidad).toFixed(2)}</span>
+                    <button class="btn-eliminar" onclick="eliminarItem(${idx})" title="Eliminar">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                `;
+                contenedor.insertBefore(div, document.getElementById('carrito-vacio'));
+            });
+
+            actualizarResumen(subtotal);
+        }
+
+        /* ── Actualiza el panel de resumen ── */
+        function actualizarResumen(subtotal) {
+            const envio = subtotal >= 50 ? 0 : (subtotal > 0 ? 5 : 0);
+            const total = subtotal + envio;
+
+            document.getElementById('subtotal').textContent = '$' + subtotal.toFixed(2);
+            document.getElementById('envio').textContent    = envio === 0 && subtotal > 0 ? '¡Gratis!' : (subtotal === 0 ? 'A calcular' : '$' + envio.toFixed(2));
+            document.getElementById('total').textContent    = '$' + total.toFixed(2);
+        }
+
+        /* ── Cambiar cantidad ── */
+        function cambiarCantidad(idx, delta) {
+            const carrito = obtenerCarrito();
+            carrito[idx].cantidad += delta;
+            if (carrito[idx].cantidad <= 0) carrito.splice(idx, 1);
+            guardarCarrito(carrito);
+            renderCarrito();
+        }
+
+        /* ── Eliminar ítem ── */
+        function eliminarItem(idx) {
+            const carrito = obtenerCarrito();
+            carrito.splice(idx, 1);
+            guardarCarrito(carrito);
+            renderCarrito();
+        }
+
+        /* ── Procesar pedido por WhatsApp ── */
+        function procesarPedido() {
+            const carrito = obtenerCarrito();
+            if (carrito.length === 0) {
+                alert('Tu carrito está vacío. Agrega productos antes de continuar.');
+                return;
+            }
+            let msg = '¡Hola! Quiero hacer el siguiente pedido:%0A%0A';
+            let total = 0;
+            carrito.forEach(i => {
+                msg += `• ${i.nombre} x${i.cantidad} = $${(i.precio * i.cantidad).toFixed(2)}%0A`;
+                total += i.precio * i.cantidad;
+            });
+            msg += `%0ATotal: $${total.toFixed(2)}%0A%0A¿Me pueden confirmar disponibilidad?`;
+            window.open(`https://wa.me/50335567783?text=${msg}`, '_blank');
+        }
+
+        /* ── Inicializar ── */
+        renderCarrito();
+
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').style.boxShadow =
+                window.scrollY > 100 ? '0 4px 20px rgba(0,0,0,0.2)' : '0 4px 20px rgba(0,0,0,0.15)';
+        });
+    </script>
+
+</body>
+</html>

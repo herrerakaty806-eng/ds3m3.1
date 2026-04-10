@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería XK - Construye Tus Sueños</title>
+    <link rel="stylesheet" href="css/estiloindex.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <i class="fas fa-truck"></i> Envío gratis en compras mayores a $50 &nbsp;|&nbsp;
+            <i class="fas fa-phone"></i> Ventas: 3556-7783
+        </div>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Ferretería XK" style="height: 50px;">
+                <span>FERRETERÍA XK</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="compras.html">Compras</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="compras.html" style="text-decoration:none; color:inherit;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Construye Tus Sueños</h1>
+            <p>La ferretería más completa con herramientas profesionales, materiales de construcción y asesoría especializada para tus proyectos.</p>
+            <div class="cta-buttons">
+                <a href="#categorias" class="btn btn-primary">Ver Catálogo</a>
+                <a href="https://wa.me/50335567783" target="_blank" class="btn btn-secondary">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="¿Qué estás buscando? (ej: taladro, cemento, pintura...)">
+            <button class="search-btn"><i class="fas fa-search"></i> Buscar</button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categorias">
+        <div class="section-header fade-in">
+            <h2>Nuestras Categorías</h2>
+            <p>Encuentra todo lo que necesitas para tu proyecto en nuestras especialidades</p>
+        </div>
+
+        <div class="categories-grid">
+            <div class="category-card fade-in">
+                <div class="category-image" style="background-image: url('img/52_DFREUND_HERRAMIENTASELECTRICAS.jpg');">
+                    <div class="category-icon"><i class="fas fa-bolt"></i></div>
+                </div>
+                <div class="category-content">
+                    <h3>Herramientas Eléctricas</h3>
+                    <p>Taladros, amoladoras, sierras circulares, lijadoras y equipos de alta potencia para profesionales.</p>
+                    <a href="productos.html#herramientas-electricas" class="category-link">Ver productos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card fade-in">
+                <div class="category-image" style="background-image: url('img/herramientasmanuales.png');">
+                    <div class="category-icon"><i class="fas fa-wrench"></i></div>
+                </div>
+                <div class="category-content">
+                    <h3>Herramientas Manuales</h3>
+                    <p>Martillos, destornilladores, llaves, alicates, niveles y equipos básicos de calidad profesional.</p>
+                    <a href="productos.html#herramientas-manuales" class="category-link">Ver productos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card fade-in">
+                <div class="category-image" style="background-image: url('img/materialescostruccion.jpg');">
+                    <div class="category-icon"><i class="fas fa-hard-hat"></i></div>
+                </div>
+                <div class="category-content">
+                    <h3>Materiales de Construcción</h3>
+                    <p>Cemento, arena, grava, ladrillos, blocks, varilla y todo para la estructura de tu obra.</p>
+                    <a href="productos.html#materiales" class="category-link">Ver productos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card fade-in">
+                <div class="category-image" style="background-image: url('img/pinturasacabados.jpg');">
+                    <div class="category-icon"><i class="fas fa-paint-roller"></i></div>
+                </div>
+                <div class="category-content">
+                    <h3>Pinturas y Acabados</h3>
+                    <p>Pinturas vinílicas, esmaltes, impermeabilizantes, brochas, rodillos y complementos.</p>
+                    <a href="productos.html#pinturas" class="category-link">Ver productos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card fade-in">
+                <div class="category-image" style="background-image: url('img/herramientas-de-plomero.jpg');">
+                    <div class="category-icon"><i class="fas fa-faucet"></i></div>
+                </div>
+                <div class="category-content">
+                    <h3>Plomería</h3>
+                    <p>Tuberías PVC y cobre, conexiones, llaves de paso, sanitarios, grifería y accesorios.</p>
+                    <a href="productos.html#plomeria" class="category-link">Ver productos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card fade-in">
+                <div class="category-image" style="background-image: url('img/electricidad.jpg');">
+                    <div class="category-icon"><i class="fas fa-plug"></i></div>
+                </div>
+                <div class="category-content">
+                    <h3>Electricidad</h3>
+                    <p>Cable THW, apagadores, contactos, lámparas LED, breakers, centros de carga y herramientas.</p>
+                    <a href="productos.html#electricidad" class="category-link">Ver productos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card fade-in">
+                <div class="category-image" style="background-image: url('img/seguridadindustrial.jpeg');">
+                    <div class="category-icon"><i class="fas fa-shield-alt"></i></div>
+                </div>
+                <div class="category-content">
+                    <h3>Seguridad Industrial</h3>
+                    <p>Cascos, guantes, lentes, arneses, botas, señalización y equipos de protección personal.</p>
+                    <a href="productos.html#seguridad" class="category-link">Ver productos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card fade-in">
+                <div class="category-image" style="background-image: url('img/herramientas-basicas-jardineria.jpg');">
+                    <div class="category-icon"><i class="fas fa-leaf"></i></div>
+                </div>
+                <div class="category-content">
+                    <h3>Jardinería</h3>
+                    <p>Podadoras, mangueras, aspersores, tierra, fertilizantes, macetas y herramientas de jardín.</p>
+                    <a href="productos.html#jardineria" class="category-link">Ver productos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card fade-in">
+                <div class="category-image" style="background-image: url('img/maquinariapesada.jpg');">
+                    <div class="category-icon"><i class="fas fa-truck-monster"></i></div>
+                </div>
+                <div class="category-content">
+                    <h3>Maquinaria Pesada</h3>
+                    <p>Mezcladoras, vibradores, andamios, escaleras, carretillas y equipo para obra pesada.</p>
+                    <a href="productos.html#maquinaria" class="category-link">Ver productos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTAS DEL MES -->
+    <section class="ofertas-mes" id="ofertas">
+        <div class="section-header fade-in" style="color: white;">
+            <h2 style="color: white;">🔥 Ofertas del Mes</h2>
+            <p style="color: rgba(255,255,255,0.9);">Aprovecha estos descuentos especiales por tiempo limitado</p>
+        </div>
+        <div class="ofertas-grid">
+            <div class="oferta-card fade-in">
+                <span class="oferta-badge">-30%</span>
+                <div class="oferta-titulo">Kit de Herramientas Básicas</div>
+                <p>Set completo de 25 piezas incluye martillo, destornilladores, llaves y más.</p>
+                <div class="oferta-precio">
+                    <span class="oferta-precio-anterior">$850</span> $595
+                </div>
+                <small>Válido hasta agotar existencias</small>
+            </div>
+            <div class="oferta-card fade-in">
+                <span class="oferta-badge">-25%</span>
+                <div class="oferta-titulo">Pintura Vinílica Premium</div>
+                <p>Cubeta de 19 litros, colores a elegir. Alta resistencia y durabilidad.</p>
+                <div class="oferta-precio">
+                    <span class="oferta-precio-anterior">$1,200</span> $900
+                </div>
+                <small>Válido todo el mes</small>
+            </div>
+            <div class="oferta-card fade-in">
+                <span class="oferta-badge">-40%</span>
+                <div class="oferta-titulo">Taladro Inalámbrico</div>
+                <p>12V con 2 baterías, maletín y accesorios. Marca líder en el mercado.</p>
+                <div class="oferta-precio">
+                    <span class="oferta-precio-anterior">$2,500</span> $1,500
+                </div>
+                <small>Solo 10 unidades disponibles</small>
+            </div>
+            <div class="oferta-card fade-in">
+                <span class="oferta-badge">-20%</span>
+                <div class="oferta-titulo">Cemento Gris 50kg</div>
+                <p>Cemento Portland de alta resistencia. Ideal para construcción general.</p>
+                <div class="oferta-precio">
+                    <span class="oferta-precio-anterior">$250</span> $200
+                </div>
+                <small>Compra mínima 5 bolsas</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured" id="productos">
+        <div class="section-header fade-in">
+            <h2>Productos Destacados</h2>
+            <p>Los favoritos de nuestros clientes con la mejor calidad</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card fade-in">
+                <div class="product-image-container">
+                    <img src="img/taladro.jpg" alt="Taladro Percutor Profesional">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Herramientas Eléctricas</span>
+                    <h3 class="product-title">Taladro Percutor 1/2" Profesional 850W</h3>
+                    <p style="color: var(--gray); font-size: 0.9rem; margin: 10px 0;">Potente motor de 850W, velocidad variable, reversa y mango auxiliar ergonómico.</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> (4.8)
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$1,899</span>
+                        <span class="old-price">$2,350</span>
+                    </div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card fade-in">
+                <span class="product-badge">NUEVO</span>
+                <div class="product-image-container">
+                    <img src="img/truper.jpg" alt="Amoladora Angular">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Herramientas Eléctricas</span>
+                    <h3 class="product-title">Amoladora Angular 4-1/2" 900W</h3>
+                    <p style="color: var(--gray); font-size: 0.9rem; margin: 10px 0;">Diseño compacto y ligero. Sistema de protección contra sobrecarga.</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (5.0)
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$1,450</span>
+                    </div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card fade-in">
+                <div class="product-image-container">
+                    <img src="img/herramientas150.jpg" alt="Set de Herramientas">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Herramientas Manuales</span>
+                    <h3 class="product-title">Caja de Herramientas 150 Piezas</h3>
+                    <p style="color: var(--gray); font-size: 0.9rem; margin: 10px 0;">Set completo con dados, llaves, destornilladores, alicates y más.</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (4.9)
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$2,299</span>
+                        <span class="old-price">$2,899</span>
+                    </div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card fade-in">
+                <span class="product-badge">-20%</span>
+                <div class="product-image-container">
+                    <img src="img/cierra.jpeg" alt="Sierra Circular">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Herramientas Eléctricas</span>
+                    <h3 class="product-title">Sierra Circular 7-1/4" 1400W</h3>
+                    <p style="color: var(--gray); font-size: 0.9rem; margin: 10px 0;">Corte preciso en madera y materiales compuestos. Guía láser integrada.</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> (4.2)
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$2,799</span>
+                        <span class="old-price">$3,499</span>
+                    </div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISIÓN, VISIÓN Y VALORES -->
+    <section class="mvv-section" id="nosotros">
+        <div class="section-header fade-in">
+            <h2>Nuestra Esencia</h2>
+            <p>Lo que nos define como empresa y equipo</p>
+        </div>
+        <div class="mvv-grid">
+            <div class="mvv-card fade-in">
+                <div class="mvv-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Misión</h3>
+                <p>Somos una ferretería comprometida con proporcionar herramientas, materiales y asesoría técnica de la más alta calidad para que nuestros clientes puedan construir, reparar y crear sus proyectos con confianza.</p>
+            </div>
+            <div class="mvv-card fade-in">
+                <div class="mvv-icon"><i class="fas fa-eye"></i></div>
+                <h3>Visión</h3>
+                <p>Para el año 2030, ser la ferretería líder en la región, reconocida por nuestra excelencia en atención, innovación en productos y compromiso con la comunidad.</p>
+            </div>
+            <div class="mvv-card fade-in">
+                <div class="mvv-icon"><i class="fas fa-heart"></i></div>
+                <h3>Valores</h3>
+                <ul>
+                    <li><strong>Compromiso:</strong> Cumplimos lo que prometemos</li>
+                    <li><strong>Calidad:</strong> Solo productos que respaldamos</li>
+                    <li><strong>Honestidad:</strong> Precios justos y transparencia</li>
+                    <li><strong>Servicio:</strong> Atención cercana y experta</li>
+                    <li><strong>Innovación:</strong> Siempre a la vanguardia</li>
+                    <li><strong>Responsabilidad:</strong> Con nuestros clientes y medio ambiente</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section class="reviews-section">
+        <div class="section-header fade-in" style="color: white;">
+            <h2 style="color: white;">Lo Que Dicen Nuestros Clientes</h2>
+            <p style="color: rgba(255,255,255,0.8);">Experiencias reales de quienes confían en nosotros</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card fade-in">
+                <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"Excelente servicio y asesoría. Me ayudaron a elegir exactamente lo que necesitaba para la remodelación de mi casa. ¡Totalmente recomendados!"</p>
+                <div class="reviewer-info">
+                    <div class="reviewer-avatar">MR</div>
+                    <div>
+                        <div class="reviewer-name">Miguel Rodríguez</div>
+                        <div class="reviewer-role">Arquitecto / Cliente frecuente</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card fade-in">
+                <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"Llevo 5 años comprando aquí para mis proyectos de construcción. Nunca me han fallado, siempre tienen stock de todo."</p>
+                <div class="reviewer-info">
+                    <div class="reviewer-avatar">CG</div>
+                    <div>
+                        <div class="reviewer-name">Carlos Gutiérrez</div>
+                        <div class="reviewer-role">Contratista independiente</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card fade-in">
+                <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <p class="review-text">"Compré mi primera caja de herramientas aquí y me explicaron para qué servía cada cosa. ¡Gracias por la paciencia y el buen trato!"</p>
+                <div class="reviewer-info">
+                    <div class="reviewer-avatar">LP</div>
+                    <div>
+                        <div class="reviewer-name">Laura Pérez</div>
+                        <div class="reviewer-role">Dueña de casa / DIY enthusiast</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card fade-in">
+                <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"La mejor ferretería de la zona sin duda. Tienen marcas reconocidas, buenos precios y el programa de lealtad es excelente."</p>
+                <div class="reviewer-info">
+                    <div class="reviewer-avatar">JH</div>
+                    <div>
+                        <div class="reviewer-name">Juan Hernández</div>
+                        <div class="reviewer-role">Técnico electricista</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands">
+        <div class="section-header fade-in">
+            <h2>Marcas que Manejamos</h2>
+        </div>
+        <div class="brands-scroll fade-in">
+            <div class="brand-item">DEWALT</div>
+            <div class="brand-item">BOSCH</div>
+            <div class="brand-item">MAKITA</div>
+            <div class="brand-item">TRUPER</div>
+            <div class="brand-item">URREA</div>
+            <div class="brand-item">PRETUL</div>
+            <div class="brand-item">STANLEY</div>
+            <div class="brand-item">BLACK &amp; DECKER</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo-footer">
+                    <img src="img/logo.png" alt="Ferretería XK" class="logo-footer-img">
+                    <h3>FERRETERÍA XK</h3>
+                </div>
+                <p>Tu aliado confiable en construcción. Construye tus sueños con nosotros desde 1995.</p>
+                <p>Comprometidos con la calidad y el servicio que mereces.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="compras.html"><i class="fas fa-chevron-right"></i> Compras</a></li>
+                    <li><a href="historia.html"><i class="fas fa-chevron-right"></i> Historia</a></li>
+                    <li><a href="productos.html"><i class="fas fa-chevron-right"></i> Productos</a></li>
+                    <li><a href="galeria.html"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                    <li><a href="ubicacion.html"><i class="fas fa-chevron-right"></i> Ubicación</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Usulután, Jucuapa — Av. Francisco Gavidia</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+50335567783">3556-7783</a></p>
+                <p><i class="fas fa-envelope"></i> ventas@ferreteriaxk.com</p>
+                <p><i class="fas fa-clock"></i> Lun - Sáb: 8:00 - 20:00</p>
+                <p><i class="fas fa-clock"></i> Dom: 9:00 - 14:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <p>Conéctate con nosotros en redes sociales</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/50335567783" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="whatsapp-directo">
+                    <a href="https://wa.me/50335567783" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 3° Desarrollado de Software - Xiomara Joselin - Katy Herrera</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').style.boxShadow =
+                window.scrollY > 100 ? '0 4px 20px rgba(0,0,0,0.2)' : '0 4px 20px rgba(0,0,0,0.15)';
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        /* ── CARRITO CON localStorage ── */
+        function obtenerCarrito() {
+            return JSON.parse(localStorage.getItem('carritoXK') || '[]');
+        }
+        function guardarCarrito(carrito) {
+            localStorage.setItem('carritoXK', JSON.stringify(carrito));
+        }
+        function actualizarBadge() {
+            const total = obtenerCarrito().reduce((s, i) => s + i.cantidad, 0);
+            document.querySelector('.cart-count').textContent = total;
+        }
+
+        actualizarBadge();
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const card = this.closest('.product-card');
+                const nombre = card.querySelector('.product-title').textContent.trim();
+                const precioTxt = card.querySelector('.current-price').textContent.replace('$','').replace(',','');
+                const precio = parseFloat(precioTxt);
+                const img = card.querySelector('.product-image-container img');
+                const imgSrc = img ? img.src : '';
+
+                const carrito = obtenerCarrito();
+                const idx = carrito.findIndex(i => i.nombre === nombre);
+                if (idx > -1) { carrito[idx].cantidad++; }
+                else { carrito.push({ nombre, precio, imgSrc, cantidad: 1 }); }
+                guardarCarrito(carrito);
+                actualizarBadge();
+
+                this.innerHTML = '<i class="fas fa-check"></i> Agregado';
+                this.style.background = '#28a745';
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-shopping-cart"></i> Agregar al Carrito';
+                    this.style.background = '';
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>

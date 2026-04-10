@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Ferretería XK</title>
+    <link rel="stylesheet" href="css/estilogaleria.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="top-bar">
+            <i class="fas fa-truck"></i> Envío gratis en compras mayores a $50 &nbsp;|&nbsp;
+            <i class="fas fa-phone"></i> Ventas: 3556-7783
+        </div>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Ferretería XK" style="height: 50px;">
+                <span>FERRETERÍA XK</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="compras.html">Compras</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="galeria.html" class="activo">Galería</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="compras.html" style="text-decoration:none; color:inherit;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Nuestra Galería</h1>
+            <p>FERRETERÍA - XK</p>
+        </div>
+    </section>
+
+    <!-- FILTROS -->
+    <section class="filtros-section">
+        <div class="filtros-container">
+            <button class="filtro-btn activo-filtro" data-filtro="todos">Todos</button>
+            <button class="filtro-btn" data-filtro="local">Nuestro Local</button>
+            <button class="filtro-btn" data-filtro="productos">Productos</button>
+            <button class="filtro-btn" data-filtro="equipo">Equipo</button>
+            <button class="filtro-btn" data-filtro="proyectos">Proyectos</button>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="galeria-section">
+        <div class="galeria-container">
+
+            <div class="galeria-item fade-in" data-categoria="local">
+                <img src="img/local.png" alt="Fachada de la ferretería" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Fachada Principal</p>
+                </div>
+            </div>
+
+            <div class="galeria-item fade-in" data-categoria="productos">
+                <img src="img/52_DFREUND_HERRAMIENTASELECTRICAS.jpg" alt="Herramientas eléctricas" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Herramientas Eléctricas</p>
+                </div>
+            </div>
+
+            <div class="galeria-item fade-in" data-categoria="local">
+                <img src="img/ferreteriageneral.jpg" alt="Interior de la ferretería" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Interior del Local</p>
+                </div>
+            </div>
+
+            <div class="galeria-item fade-in" data-categoria="productos">
+                <img src="img/materialescostruccion.jpg" alt="Materiales de construcción" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Materiales de Construcción</p>
+                </div>
+            </div>
+
+            <div class="galeria-item fade-in" data-categoria="equipo">
+                <img src="img/Gemini_Generated_Image_xr1gygxr1gygxr1g.png" alt="Nuestro equipo de trabajo" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Nuestro Equipo</p>
+                </div>
+            </div>
+
+            <div class="galeria-item fade-in" data-categoria="proyectos">
+                <img src="img/proyctodeconstruccion.jpg" alt="Proyecto de construcción" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Proyecto Residencial</p>
+                </div>
+            </div>
+
+            <div class="galeria-item fade-in" data-categoria="productos">
+                <img src="img/pinturasacabados.jpg" alt="Pinturas y acabados" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Pinturas y Acabados</p>
+                </div>
+            </div>
+
+            <div class="galeria-item fade-in" data-categoria="local">
+                <img src="img/Gemini_Generated_Image_1948621948621948.png" alt="Área de atención al cliente" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Atención al Cliente</p>
+                </div>
+            </div>
+
+            <div class="galeria-item fade-in" data-categoria="proyectos">
+                <img src="img/proyectocomersial.jpg" alt="Proyecto comercial" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Proyecto Comercial</p>
+                </div>
+            </div>
+
+            <div class="galeria-item fade-in" data-categoria="equipo">
+                <img src="img/ateccionperso.png" alt="Atención personalizada" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Atención Personalizada</p>
+                </div>
+            </div>
+
+            <div class="galeria-item fade-in" data-categoria="productos">
+                <img src="img/herramientas-de-plomero.jpg" alt="Plomería y tuberías" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Plomería y Tuberías</p>
+                </div>
+            </div>
+
+            <div class="galeria-item fade-in" data-categoria="proyectos">
+                <img src="img/proyect.jpg" alt="Proyecto terminado" class="galeria-img">
+                <div class="galeria-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <p>Obra Terminada</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close"><i class="fas fa-times"></i></button>
+        <button class="lightbox-prev" id="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next" id="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo-footer">
+                    <img src="img/logo.png" alt="Ferretería XK" class="logo-footer-img">
+                    <h3>FERRETERÍA XK</h3>
+                </div>
+                <p>Tu aliado confiable en construcción. Construye tus sueños con nosotros desde 1995.</p>
+                <p>Comprometidos con la calidad y el servicio que mereces.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="compras.html"><i class="fas fa-chevron-right"></i> Compras</a></li>
+                    <li><a href="historia.html"><i class="fas fa-chevron-right"></i> Historia</a></li>
+                    <li><a href="productos.html"><i class="fas fa-chevron-right"></i> Productos</a></li>
+                    <li><a href="galeria.html"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                    <li><a href="ubicacion.html"><i class="fas fa-chevron-right"></i> Ubicación</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Usulután, Jucuapa — Av. Francisco Gavidia</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+50335567783">3556-7783</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ventas@ferreteriaxk.com">ventas@ferreteriaxk.com</a></p>
+                <p><i class="fas fa-clock"></i> Lun - Sáb: 8:00 - 20:00</p>
+                <p><i class="fas fa-clock"></i> Dom: 9:00 - 14:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <p>Conéctate con nosotros en redes sociales</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/50335567783" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="whatsapp-directo">
+                    <a href="https://wa.me/50335567783" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 3° Desarrollado de Software - Xiomara Joselin - Katy Herrera</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').style.boxShadow =
+                window.scrollY > 100 ? '0 4px 20px rgba(0,0,0,0.25)' : '0 4px 20px rgba(0,0,0,0.15)';
+        });
+
+        const filtros = document.querySelectorAll('.filtro-btn');
+        const items   = document.querySelectorAll('.galeria-item');
+        filtros.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filtros.forEach(b => b.classList.remove('activo-filtro'));
+                btn.classList.add('activo-filtro');
+                const filtro = btn.dataset.filtro;
+                items.forEach(item => {
+                    if (filtro === 'todos' || item.dataset.categoria === filtro) {
+                        item.style.display = 'block';
+                        setTimeout(() => item.style.opacity = '1', 10);
+                    } else {
+                        item.style.opacity = '0';
+                        setTimeout(() => item.style.display = 'none', 300);
+                    }
+                });
+            });
+        });
+
+        const lightbox      = document.getElementById('lightbox');
+        const lightboxImg   = document.getElementById('lightbox-img');
+        const lightboxCap   = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const lightboxPrev  = document.getElementById('lightbox-prev');
+        const lightboxNext  = document.getElementById('lightbox-next');
+        let currentIndex = 0;
+        let visibleItems = [];
+
+        function openLightbox(index) {
+            visibleItems = [...document.querySelectorAll('.galeria-item')].filter(i => i.style.display !== 'none');
+            currentIndex = index;
+            const img = visibleItems[currentIndex].querySelector('.galeria-img');
+            const cap = visibleItems[currentIndex].querySelector('.galeria-overlay p');
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightboxCap.textContent = cap.textContent;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.querySelectorAll('.galeria-item').forEach((item, index) => {
+            item.addEventListener('click', () => openLightbox(index));
+        });
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+        lightboxNext.addEventListener('click', () => { currentIndex = (currentIndex + 1) % visibleItems.length; openLightbox(currentIndex); });
+        lightboxPrev.addEventListener('click', () => { currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length; openLightbox(currentIndex); });
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') lightboxNext.click();
+            if (e.key === 'ArrowLeft')  lightboxPrev.click();
+        });
+    </script>
+</body>
+</html>
